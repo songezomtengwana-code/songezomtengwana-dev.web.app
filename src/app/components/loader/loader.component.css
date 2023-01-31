@@ -1,0 +1,86 @@
+.blip {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 15px solid;
+  box-sizing: border-box;
+  animation: _ngcontent-lwu-c16_animloader 1s linear infinite alternate;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary);
+  display: grid;
+  place-content: center;
+  color: white;
+  position: absolute;
+  animation: off 1.5s 1s ease-in-out alternate forwards;
+}
+
+
+
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.loader-container-watermarks {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  position: relative;
+}
+
+.loader-container-blip {
+  position: absolute;
+  left: 48%;
+  top: 45%;
+}
+
+.name,
+.surname {
+  font-family: 'Inria Serif';
+  color: #ffffff20;
+  font-size: 16rem;
+  position: absolute;
+}
+
+.name {
+  top: 4rem;
+  left: 5rem;
+}
+
+.surname {
+  bottom: 10rem;
+  right: 5rem;
+}
+
+.blip::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  transform-origin: bottom;
+  height: 40px;
+  background: #1d1d1f;
+  top: -1rem;
+  left: 13px;
+  animation: rotate 1s ease-in-out forwards infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

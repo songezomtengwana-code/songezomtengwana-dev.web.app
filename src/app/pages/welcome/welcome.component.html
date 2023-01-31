@@ -1,0 +1,9 @@
+<app-landing></app-landing>
+<content-section scrollPos="about" header="About Me"
+  text="I am young innovative frontend developer who is work driven in the technology industry and building his own pathway to success . i am a front-end web developer who can build web app using a number of frameworks from angular, react to next.js , im striving for becoming a full-stack developer and create the best web applications .">
+</content-section>
+<content-section scrollPos="services" [api]="data" header="Top Services" flow="row-reverse"></content-section>
+<content-section scrollPos="skills" header="Programming Skills" [skills]="data.programming"></content-section>
+<content-section scrollPos="projects" header="Recent Projects" [projects]="data.projects" flow="row-reverse">
+</content-section>
+<app-footer></app-footer>

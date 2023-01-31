@@ -1,0 +1,32 @@
+[
+    {
+        "language": "HTML",
+        "icon": "./assets/html.png",
+        "css": "fa-brand fa-html5",
+        "description": "I make use of HTML as the core maker for my web projects and to markup and give context to websites and web applications I am building."
+    },
+    {
+        "language": "SCSS",
+        "icon": "./assets/sass.png",
+        "css": "fa-brands fa-sass",
+        "description": "To beautify and give life to my web projects, I make use of CSS to make sure that the end user of my web projects receives comfort and as well as great user experience while making use of the product."
+    },
+    {
+        "icon": "./assets/js.png",
+        "css": "fa-brands fa-js",
+        "description": "I made use of JavaScript to give my websites and web applications functionality and to further increase the end-users user experience.",
+        "language": "javascript"
+    },
+    {
+        "language": "Angular",
+        "css": "fa-brands fa-angular",
+        "icon": "./assets/angular.png",
+        "description": "I started using Angular in October 2017 and since then I have been using it for creating dynamic websites and single page web applications."
+    },
+    {
+        "language": "React",
+        "icon": "./assets/react.png",
+        "css": "fa-brands fa-react",
+        "description": "I make use of react for developing heavy single page application that require fast and efficient page rendering using their engines .  "
+    }
+]

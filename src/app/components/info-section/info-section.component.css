@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  min-height: 50vh;
+  padding: 9rem 17%;
+  padding-bottom: 0;
+}
+
+.info-container {
+  width: 100%;
+}
+
+.info-container-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.info-container-subheader {
+  font-size: 16px;
+  color: #4e4e4e;
+  margin-bottom: 20px;
+}

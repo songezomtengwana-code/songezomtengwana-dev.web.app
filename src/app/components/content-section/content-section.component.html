@@ -1,0 +1,54 @@
+<section class="section" [id]="scrollPos">
+  <div class="section-container" [id]="flow">
+    <div class="section-container-left">
+      <div class="left-header">
+        {{ header }}
+      </div>
+    </div>
+    <div class="section-container-right">
+      <!-- part 1 -->
+      <p class="right-text" *ngIf="text">{{ text }}</p>
+      <!-- part 2 -->
+      <div class="right-displayer" *ngIf="api">
+        <div class="right-displayer-card" *ngFor="let card of api.services">
+          <div class="card-image"><img [src]="card.imgurl" alt="service card" srcset=""></div>
+          <div class="card-content">
+            <div class="card-content-header">{{ card.header }}</div>
+            <p class="car d-content-p">
+              {{ card.text }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- part 3 -->
+      <div class="right-skills" *ngIf="skills">
+        <div class="right-skills-icons">
+          <div class="icon" *ngFor="let skill of skills">
+            <!-- <img [src]="skill.icon" [alt]="skill.length" srcset=""> -->
+            <i [ngClass]="skill.css"></i>
+          </div>
+        </div>
+      </div>
+      <!-- part 4 -->
+      <div class="right-projects" *ngIf="projects">
+        <div class="projects-container">
+          <div class="projects-container-banner">
+            <div class="banner-image">
+              <img src='../../../assets/projects/unity-trust.png' [alt]="project.name" srcset=""
+                *ngFor="let project of projects" (click)="handleProjectReview(project)">
+              <!-- <img src={{task.imgurl}} *ngFor="let task of projectsResponse" (click)="handleProjectReview(task)" alt=""> -->
+            </div>
+          </div>
+          <div class="project-container-content">
+            <div class="content-name">{{ content.name }}</div>
+            <div class="content-link">
+              <img src="../../../assets/link.png" alt="" srcset="">
+              <a [href]="content.url"></a>
+            </div>
+            <p class="content-text">{{ content.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

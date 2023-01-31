@@ -1,0 +1,12 @@
+[
+    {
+        "imgurl": "../assets/desktop.svg",
+        "header": "Responsive Web Development",
+        "text": "I design & develop web applications that can be suited for any size screen desktop or mobile."
+    },
+    {
+        "imgurl": "../assets/mobile.svg",
+        "header": "Mobile App Design",
+        "text": "Mobile application design with tools like figma and adobe xd with  full functionality"
+    }
+]

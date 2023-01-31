@@ -1,0 +1,18 @@
+<div class="nav">
+  <div class="nav-container">
+    <a href="#top" class="nav-brand">
+      <img [src]="data.badge" alt="kos" srcset="">
+    </a>
+    <div class="nav-links">
+      <a [href]="link.href" class="nav-links-link" *ngFor="let link of data.navlinks"
+        (click)="handleNavLinks()">{{ link.name }}</a>
+      <div class="nav-links-close bi bi-x" (click)="handleNavLinks()"></div>
+    </div>
+    <div class="nav-contact">
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+<div class="ham">
+  <div class="bi bi-list" (click)="handleNavLinks()"></div>
+</div>

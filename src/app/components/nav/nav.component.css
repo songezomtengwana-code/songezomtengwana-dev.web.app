@@ -1,0 +1,130 @@
+.nav {
+  display: grid;
+  place-content: center;
+  padding: .5rem 2rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  width: 70vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  margin-right: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row;
+  min-width: 15vw;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+a.nav-links-link {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+.nav-contact a {
+  padding: .75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 7.5px;
+}
+
+a.nav-links-link:hover {
+  color: var(--primary);
+  transition: all .5s;
+}
+
+.nav-links-close {
+  visibility: none;
+}
+
+.ham {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .nav {
+    display: flex;
+  }
+
+  .nav-container {
+    width: 100vw !important;
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: baseline;
+    right: 0;
+    background: var(--primary);
+    height: 100vh;
+    color: white;
+    flex-flow: column !important;
+    z-index: 10;
+    padding: 6rem 1rem;
+    align-items: flex-end;
+    font-size: 2rem !important;
+    gap: 3rem;
+    justify-content: flex-end !important;
+    font-size: 1.5rem;
+    transition: all 1s;
+    transform: translateX(100vh);
+  }
+
+  .nav-links-active {
+    transform: translateX(0px) !important;
+  }
+
+  a.nav-links-link {
+    color: #ffffff !important;
+    display: flex;
+  }
+
+  .nav-links-close {
+    visibility: visible !important;
+    width: 5vh;
+    height: 5vh;
+    background: white;
+    color: var(--primary);
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+
+  .ham {
+    position: fixed;
+    color: white;
+    font-size: 2rem;
+    background: var(--primary);
+    bottom: 1rem;
+    right: 1rem;
+    width: 5vh;
+    height: 5vh;
+    display: grid !important;
+    place-content: center;
+    border-radius: 50%;
+    padding: 1.5rem;
+  }
+
+}

@@ -1,0 +1,25 @@
+.primary {
+  background: linear-gradient(45deg, #7a3ecd, #7a3ecd87);
+  padding: .75rem 2.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  transition-property: background;
+  transition-duration: .5s;
+  cursor: pointer;
+  width: max-content;
+  text-transform: capitalize;
+}
+
+.primary:hover {
+  background: #7a3ecd;
+}
+
+.primary:hover~span {
+  transform: translateX(10px);
+  transition: all .5s;
+}
+
+.primary a {
+  text-decoration: none;
+}

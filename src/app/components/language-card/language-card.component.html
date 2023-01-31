@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="skill">
+    <div class="skill-banner">
+      <div class="skill-banner-button" *ngFor="let skill of data.programming">
+        <img [src]="skill.icon" style="max-height: 5rem;" *ngIf="skill.icon" (mouseover)="handleDescription(skill)">
+        <div class="bs-icon">
+          <i [ngClass]="skill.css"></i>
+        </div>
+      </div>
+    </div>
+    <div class="skill-preview">
+      <div class="skill-preview-description" *ngIf="description">
+        <span class="skill-preview-description-title" id="slipin">{{ language }}</span>
+        <div class="skill-preview-description-text" id="slipin">{{ description }}</div>
+      </div>
+    </div>
+  </div>
+</div>

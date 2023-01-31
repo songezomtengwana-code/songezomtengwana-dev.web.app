@@ -1,0 +1,152 @@
+.footer {
+  display: grid;
+  place-content: center;
+  padding: 6rem 5rem 4rem 5rem;
+  margin-top: 5rem;
+  background-color: var(--primary);
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 5rem;
+}
+
+form.form {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  color: black;
+  min-width: 22.5vw;
+}
+
+.form-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.form-body {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.form-body-inputs {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.inputs-input {
+  border: none;
+  border-bottom: 2px solid;
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.inputs-textarea {
+  border: none;
+  border-bottom: 2px solid;
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+label.inputs-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+input.inputs-input:focus~label {
+  top: -10px;
+  left: 2.5px;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: all 1s;
+  color: var(--primary);
+}
+
+input.inputs-input:focus {
+  border-bottom-color: var(--primary);
+  transition: all 1s;
+}
+
+
+label.inputs-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+textarea.inputs-textarea:focus~label {
+  top: -10px;
+  left: 2.5px;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: all 1s;
+  color: var(--primary);
+}
+
+.inputs-textarea:focus {
+  border-bottom-color: var(--primary);
+  transition: all 1s;
+}
+
+button {
+  padding: .5rem 2rem;
+  border-radius: 7.5px;
+  outline: none;
+  color: white;
+  background: var(--primary);
+  border: 2px solid white;
+}
+
+.footer-container-links {
+  display: grid;
+  place-content: center;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.footer-container-links ul a {
+  color: #ffffffa1;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.footer-container-links ul a:hover {
+  color: white;
+  transition: all 1s;
+}
+
+.bottom {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom a {
+  color: #ffffffa1;
+  margin-left: 10px;
+}
+
+.bottom a:hover {
+  color: white;
+}
